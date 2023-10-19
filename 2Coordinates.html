@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Coordinates</title>
+    <style>
+     #abc
+     {
+         width: "300";
+         height: "150";
+         border: 1px solid red;
+     }
+    </style>
+</head>
+<body>
+    <canvas id="abc"></canvas>
+
+    <script>
+        var cnvs = document.getElementById("abc");
+        var ctx = cnvs.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(300,150);
+        ctx.stroke();
+    </script>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+
+    <!-- <canvas id="xyz" width="200" height="100" style="border: 1x solid black;">
+        </canvas>
+
+    <script>
+        var canvas = document.getElementById("xyz");
+        var asd = canvas.getContext("2d");
+        asd.beginPath();
+        asd.arc(90,50,40,0,2*Math.PI);
+        asd.strokeStyle ="red";
+        asd.stroke();
+    </script> -->
+</body>
+</html>

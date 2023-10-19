@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="thanks.html" autocomplete="off" method="GET">
+        
+        first Name:<input type="text" name="fname" autofocus maxlength="15" placeholder="Enter your first name" required size="25">
+         &nbsp; &nbsp;
+
+        Last name:<input type="text" name="lname" disabled> <br><br>
+
+        Email: <input type="email" name="useremail"> &nbsp; &nbsp;
+
+        password: <input type="password" name="userpassword" readonly value="This is read only"> <br><br>
+
+        Mobile: <input type="tel" name="usermobile"><br><br>
+
+        Date Of Birth: <input type="date" name="userDate">&nbsp; &nbsp;
+
+        DOB with Time:- <input type="datetime-local" name="DOB"> &nbsp; &nbsp;
+        
+        Birth Month:- <input type="month" name="month"> &nbsp; &nbsp;
+        week:- <input type="week" name="week"><br><br>
+
+        Gender:
+        Male <input type="radio" name="gender"> &nbsp;
+        Female <input type="radio" name="gender"> &nbsp;
+        Other <input type="radio" name="gender"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+        Language:- 
+        English <input type="checkbox" name="language" checked>
+        Hindi <input type="checkbox" name="language">
+        Urdu <input type="checkbox" name="language"> <br><br>
+
+        Color Pick-: <input type="color" name="uicolor"> &nbsp; &nbsp;
+
+        Upload your pic -: <input type="file" name="photofile" accept="image/*" multiple><br><br>
+
+        Family Member-: <input type="number" name="personCount" min="1" max="15" step="2"> &nbsp; &nbsp;  <!--ticket booking-->
+
+        Range-: <input type="range" name="range" min="1" max="10"><br><br>
+
+        Search -: <input type="search" name="search"> &nbsp; &nbsp;
+        
+        Website URL : <input type="url" name="websiteURL"> <br><br>
+
+        Time:- <input type="time" name="submittime"><br><br>   
+        
+        Country-: <input list="country">
+                <datalist id="country">
+                    <option value="India"></option>
+                    <option value="Nepal"></option>
+                    <option value="China"></option>
+                    <option value="Dubai"></option>
+                </datalist> <br><br>
+
+      <input type="image" src="submit.jpg" width="10%" height="10%"> &nbsp;
+      <input type="submit" value="Submit to svr2" formaction="server1.html">
+      
+      <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

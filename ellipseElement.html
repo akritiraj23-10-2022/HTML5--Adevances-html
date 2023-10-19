@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Ellipse Element </title>
+    <style>
+         .box{
+            background: #eee;
+            border: 2px solid grey;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        .second{
+            transform: rotate(30deg);
+            transform-origin: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>SVG Ellipse Element</h1>
+
+    <div class="box">
+        <svg viewBox="0 0 100 100">
+            <ellipse cx="50" cy="50" rx="20" ry="35" fill="none" stroke="black"></ellipse>
+
+            <ellipse class="second" cx="50" cy="50" rx="20" ry="35" fill="none" stroke="black"></ellipse>
+
+        </svg>
+
+    </div>
+</body>
+</html>

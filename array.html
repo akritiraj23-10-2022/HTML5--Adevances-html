@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        document.write("<h1> Creating Array </h1>")
+        var marks = [35,43,27,78];
+        document.write(marks[1],marks[0] + "<br>");
+        document.write(marks.length + "<br>");
+        document.write(Array.isArray(marks) + "<br>");
+       // marks[0]=65;
+        document.write(marks[0] + "<br>");
+        let value= marks.indexOf(65);
+        document.write(value  + "<br>");
+
+        marks.push(70);   //adding an element at the end
+        document.write(marks + "<br>");
+
+        marks.unshift(76); //adding an element at the begining
+        document.write(marks + "<br>");
+
+        marks.pop();   //removing an element from the end
+        document.write(marks + "<br>");
+
+        marks.shift(70); //removing an element from the begining
+        document.write(marks + "<br>");
+
+        marks.splice(1,2); //removing the element by the given index
+        document.write(marks + "<br>");
+
+        marks.reverse();
+        document.write(marks + "<br>");
+
+        var marks2 = [2,3,4,5,6,7];
+
+        marks =  marks.concat(marks2);
+        document.write(marks + "<br>");
+
+        document.write("<h1> Creating Object </h1>");
+
+        var myobj = {
+            name:'manish',
+            dep:'BCA',
+            isActive:true,
+            marks: [1,2,3,4,5]
+
+        }
+        document.write(myobj.name + "<br>");
+        document.write(myobj.dep + "<br>");
+        document.write(myobj.isActive +"<br>");
+        document.write(myobj.marks);
+        
+    </script>
+</body>
+</html>
